@@ -16,7 +16,7 @@ async def on_ready():
 
 
 async def load():
-    await client.load("cogs.unix_commands")
+    await client.load_extension("cogs.unix_commands")
 
 async def main():
     async with client:
