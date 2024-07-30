@@ -265,7 +265,7 @@ class unix_commands(commands.Cog):
         else:
             category_name = self.current_category.strip()
             category_obj = discord.utils.get(ctx.guild.categories, name = category_name)
-            channel_list = category_obj.channels.flatten()
+            channel_list = category_obj.channels
         
         
         try:
@@ -278,7 +278,7 @@ class unix_commands(commands.Cog):
             pass
 
         
-        parameter_l_character = ""
+        parameter_l_character = " "
         if parameter_l == 1:
             parameter_l_character = "\n"
         
@@ -286,7 +286,7 @@ class unix_commands(commands.Cog):
             if channel.name[0] == "." and parameter_a == 0:
                 continue
             else:
-                channel_names +=  channel.name + parameter_l_character + " "
+                channel_names +=  channel.name + parameter_l_character
         
 
         await ctx.send(channel_names)
