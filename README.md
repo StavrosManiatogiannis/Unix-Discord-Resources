@@ -48,8 +48,8 @@ Removes a category channel with the speicified name. By default it doesn't remov
 Moves a channel with a specified path to another specified path, works with both absolute and relative paths.
 
 ## SETTING UP
-* Download the Python programming language
-* Use the following command in the terminal in order to install the python packages ```python -m pip install discord.py python-dotenv```
+* Install the Python programming language
+* Use this command in the terminal ```python -m pip install discord.py python-dotenv``` in order to install the required python packages
 * Go to Discord Developer Portal, create a new Application and copy it's token
 * Go to the ".env" file and paste your token after the "=" sign with no space in between
 * Inivte the bot to your server, execute the main.py function and the bot is online.
